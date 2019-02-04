@@ -1,0 +1,107 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Do not alter this block of commands.  If you're proficient at LaTeX, you may include additional packages, create macros, etc. immediately below this block of commands, but make sure to NOT alter the header, margin, and comment settings here. 
+\documentclass[12pt]{article}
+ \usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb,amsfonts, enumitem, fancyhdr, color, comment, graphicx, environ}
+\pagestyle{fancy}
+\setlength{\headheight}{65pt}
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{sol}
+    {\emph{Solution:}
+    }
+    {
+    \qed
+    }
+\specialcomment{com}{ \color{blue} \textbf{Comment:} }{\color{black}} %for instructor comments while grading
+\NewEnviron{probscore}{\marginpar{ \color{blue} \tiny Problem Score: \BODY \color{black} }}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Fill in the appropriate information below
+\lhead{Student's name}  %replace with your name
+\rhead{ Assignment 1} %replace XYZ with the homework course number, semester (e.g. ``Spring 2019"), and assignment number.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Do not alter this block.
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+{\bf Homework for week 2}
+
+From the Textbook:
+
+\begin{itemize}
+\item Section 2.5: 1-38
+\item Section 2.4: 1-12, 17-68, 73-80
+\end{itemize}
+
+%Solutions to problems go below.  Please follow the guidelines from https://www.overleaf.com/read/sfbcjxcgsnsk/
+
+%Copy the following block of text for each problem in the assignment.
+\begin{problem}{1}
+  Evaluate each limit using algebraic techniques
+  \begin{description}
+  \item[i] $\displaystyle \lim_{x\rightarrow 0} \frac{x^2-25}{x^2-4x-5}$
+  \item[ii] $\displaystyle \lim_{x\rightarrow \infty} \sqrt[3]{\frac{x-3}{5-x}}$
+  \item[iii] $\displaystyle \lim_{x\rightarrow -2}\frac{x^4+5x^3+6x^2}{X^2(X+1)-4(X+1)}$
+  \end{description}
+\end{problem}
+%\begin{sol}
+%Write your solution here.
+%\end{sol}
+
+
+
+%Copy the following block of text for each problem in the assignment.
+\begin{problem}{2}
+  For the function
+  $$
+ f(x) = \begin{cases}
+    \sin{\pi x} & x< 1 \\
+      2^{x^2}    & x > 1
+  \end{cases}
+ $$
+ Evaluate:
+  \begin{enumerate}[label=\roman*)]
+  \item $f(1) =$
+  \item $\displaystyle \lim_{x\rightarrow 0} f(x)$
+  \item $\displaystyle \lim_{x\rightarrow 1} f(x)$
+  \end{enumerate}
+\end{problem}
+%\begin{sol}
+%Write your solution here.
+%\end{sol}
+
+\begin{problem}{3}
+  For the function
+  $$
+  \displaystyle
+ f(x) = \begin{cases}
+    t^2 & t < -2 \\
+    \displaystyle\frac{t+6}{t^2-t}   & -1<t<2 \\
+    3t-2 & t\geq 2
+  \end{cases}
+ $$
+ Evaluate:
+  \begin{enumerate}[label=\roman*)]
+  \item $f(-3/2) =$
+  \item $f(2)$
+  \item $f(3/2)$
+  \item $\displaystyle \lim_{t\rightarrow -2} f(t)$
+  \item $\displaystyle \lim_{t\rightarrow 1^{+}} f(t)$
+  \item $\displaystyle \lim_{t\rightarrow 2} f(t)$
+  \item $\displaystyle \lim_{t\rightarrow 0} f(t)$
+  \end{enumerate}
+\end{problem}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Do not alter anything below this line.
+\end{document}

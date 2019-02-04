@@ -1,0 +1,154 @@
+\documentclass[11pt]{exam}
+\RequirePackage{amssymb, amsfonts, amsmath, latexsym, verbatim, xspace, setspace, mathrsfs}
+\usepackage{amsmath,amsthm,amssymb,amsfonts, 
+hyperref, color, graphicx, enumitem}
+\RequirePackage{tikz, pgflibraryplotmarks}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+ 
+\newenvironment{problem}[2][Problem:]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2}]}{\end{trivlist}}
+
+\newenvironment{claim}[2][Claim:]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2}]}{\end{trivlist}}
+
+\newenvironment{defn}[2][Definition:]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2}]}{\end{trivlist}}
+
+% Here's where you edit the Class, Exam, Date, etc.
+\newcommand{\class}{Calculus 1 (social sciences)}
+\newcommand{\term}{Winter 2019}
+\newcommand{\examnum}{}
+\newcommand{\examdate}{Quiz 2}
+\newcommand{\timelimit}{}
+
+% For an exam, single spacing is most appropriate
+\singlespacing
+% \onehalfspacing
+% \doublespacing
+
+% For an exam, we generally want to turn off paragraph indentation
+\parindent 0ex
+
+\begin{document} 
+
+% These commands set up the running header on the top of the exam pages
+\pagestyle{head}
+\firstpageheader{Name:}{Quiz 2}{}
+\runningheader{\class}{\examnum\ - Page \thepage\ of \numpages}{\examdate}
+\runningheadrule
+
+%\begin{flushright}
+%\begin{tabular}{p{2.8in} r l}
+%\textbf{\class} & \textbf{Name:} & \makebox[2in]{\hrulefill}\\
+%\textbf{\term} &&\textbf{\examnum}\\
+%\textbf{\examdate} &&
+%\textbf{Time Limit:  \timelimit}  \\ 
+%\end{tabular}\\
+%\end{flushright}
+%\rule[1ex]{\textwidth}{.1pt}
+
+
+
+
+%\begin{minipage}[t]{3.7in}
+%\vspace{0pt}
+%\begin{itemize}
+
+%% \item \textbf{DO NOT open the exam booklet until you are told to begin. You should write your name and section number at the top and read the instructions.}
+
+%% \vfill
+
+%% \item Organize your work, in a reasonably neat and coherent way, in
+%% the space provided. If you wish for something to not be graded, please strike it out neatly. I will grade only work on the exam paper, unless you clearly indicate your desire for me to grade work on additional pages.
+
+%% \item You may use any results from class, homework or the text, but you must cite the result you are using. You must prove everything else.
+
+%% \item You needn't spend your time rewriting definitions or axioms on the exam.
+
+%% \end{itemize}
+
+
+%% \end{minipage}
+%% \hfill
+%% \begin{minipage}[t]{2.3in}
+%% \vspace{0pt}
+%% %\cellwidth{3em}
+%% \gradetablestretch{2}
+%% %Uncomment this line to make the table display 100 as the total no matter what. This is good for tests with an ommit question.
+%% %\settabletotalpoints{100}
+%% \vqword{Problem}
+%% \addpoints % required here by exam.cls, even though questions haven't started yet.	
+%% \gradetable[v]%[pages]  % Use [pages] to have grading table by page instead of question
+
+%% \end{minipage}
+
+%% \begin{itemize}
+
+
+%% \item You may use the text, my class notes and/or any notes and study guides you have created. You may use a calculator. You may not use a cell phone or computer.
+
+
+%% \item When you have completed your test, hand it to me and go have a great weekend!
+
+%% \item There is a single bonus problem at the end of the test. It would be best to work first on the main test as this problem is only worth 5 points and will be graded strictly.
+
+%% \end{itemize}
+
+%%\newpage
+
+\begin{questions}
+\addpoints
+\question Evaluate each limit it it exists.
+\begin{parts}
+\part[2] $\displaystyle \lim_{x\rightarrow -2} \frac{x^2-4}{x+2}$
+  \vfill
+
+  \part[2] $\displaystyle \lim_{x\rightarrow\infty} \frac{4x^2-1}{x+2}$
+    \vfill
+\end{parts}
+
+
+\question[6] for the function
+$$
+\displaystyle  f(x) = \begin{cases}
+  -x & \text{if}\;\; x\leq 0  \\
+  x & \text{if}\;\;0<x< 1 \\
+  0 & \text{if}\;\; x=1  \\
+  -x+2 & \text{if}\;\; x>1 
+  \end{cases}
+$$
+Evaluate:
+\begin{enumerate}[label=\roman*)]
+\item $f(0) = $
+  \vfill
+\item $f(1)= $
+  \vfill
+\item $\displaystyle \lim_{x\rightarrow 1} f(x) =$
+\vfill
+\item $\displaystyle \lim_{x\rightarrow 0} f(x) =$
+\end{enumerate}
+
+\vfill
+\newpage 
+\addpoints
+
+\question 
+\begin{parts}
+  \part[5] Find the equation of the line passing through the points $(1,4)$ and $(3,-12)$.
+  \vfill
+  \part[1] What are the $x$ and $y$ intercept for the line in the previous question?
+  \vfill
+  \part[5] Draw the line on the $xy$-coordinate system.  Points will be taken off for sloppy drawing.  Label axis and important points.
+\end{parts}
+\vfill
+
+%\bonusquestion[5] This is a bonus question. It has points but they are not added on the cover page.
+%\vfill
+
+\end{questions}
+\end{document}
