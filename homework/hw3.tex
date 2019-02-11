@@ -1,0 +1,116 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Do not alter this block of commands.  If you're proficient at LaTeX, you may include additional packages, create macros, etc. immediately below this block of commands, but make sure to NOT alter the header, margin, and comment settings here. 
+\documentclass[12pt,letterpaper]{article}
+ \usepackage{geometry} 
+\usepackage{amsmath,amsthm,amssymb,amsfonts, enumitem, fancyhdr, color, comment, graphicx, environ,multicol}
+\pagestyle{fancy}
+%\setlength{\headheight}{65pt}
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{sol}
+    {\emph{Solution:}
+    }
+    {
+    \qed
+    }
+\specialcomment{com}{ \color{blue} \textbf{Comment:} }{\color{black}} %for instructor comments while grading
+\NewEnviron{probscore}{\marginpar{ \color{blue} \tiny Problem Score: \BODY \color{black} }}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Fill in the appropriate information below
+\lhead{Student's name}  %replace with your name
+\rhead{ In class Homework 3} %replace XYZ with the homework course number, semester (e.g. ``Spring 2019"), and assignment number.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Do not alter this block.
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%Solutions to problems go below.  Please follow the guidelines from https://www.overleaf.com/read/sfbcjxcgsnsk/
+
+%Copy the following block of text for each problem in the assignment.
+\begin{problem}{1}
+  Use the definition of the derivative to find the derivative of the following
+\begin{multicols}{2}
+  \begin{enumerate}[label=\roman*)]
+  \item $f(x) = 2$
+  \item $f(x)=x^2$
+  \item $g(x)=2x^2 - x$
+  \item $\displaystyle h(x) = \frac{2}{x}$
+  \item $\displaystyle f(x) = \sqrt{x}$
+  \end{enumerate}
+\end{multicols}
+\end{problem}
+%\begin{sol}
+%Write your solution here.
+%\end{sol}
+
+
+%Copy the following block of text for each problem in the assignment.
+\begin{problem}{2}
+  Find the slope of the tangent line to the function $f(x)=3x-x^2$ at the point $(2,11)$.
+\end{problem}
+%\begin{sol}
+%Write your solution here.
+%\end{sol}
+\vfill
+
+\begin{problem}{3}
+  Let
+  $$
+  f(x)=\begin{cases} x^2 & \text{if} x\leq 1\\
+  ax+b & \text{if} x > 1
+  \end{cases}
+  $$
+  Find the values of $a$ and $b$ such that $f$ is continuous and has a derivative at $x=1$
+\vfill
+\end{problem}
+
+\begin{problem}{4}
+  find the derivative of the following functions.
+\begin{multicols}{2}
+  \begin{enumerate}[label=\roman*)]
+  \item $f(x) = 4x^2 + x$
+  \item $\displaystyle g(x)=\frac{5}{x}$
+  \item $f(t) = 2t^3+\sqrt{t^3}$
+  \item $ h(x) = (x^2-x)(1/x-2)$
+  \item $f(x) = \frac{(x^2-x)}{(x^3+1)}$
+  \item $g(w) = (w^3-w^2+w-1)(w^2+1) $
+  \item $f(x) = \displaystyle\frac{3}{3x+1}$
+  \item $g(x) = \displaystyle\frac{\sqrt{x}+1}{x^2+1}$
+    \item $f(x) = \displaystyle\frac{x}{x^2-4}-\frac{x-1}{x^2+4}$
+  \end{enumerate}
+\end{multicols}
+\end{problem}
+
+\begin{problem}{5}
+  The jnumber of bacteria $N(t)$ in a certain culture $t$ min after an experiment bactericde is introduced is given by
+  $$
+  N(t) = \frac{10000}{1+t^2} + 2000
+  $$
+  Find the rate of change of the number of bacteria in the culture 1 min and 2 min after the bactericide is introduced.  What is the population of the bacteria in the culture 1 min and 2 min after the bactericide is introduced?
+\end{problem}
+
+\begin{problem}{6}
+  Suppose the distance $s$ (in feet) covered by a car moving along a straight road after $t$ seconds is given by the function $s = f(t) = 2t^2+48t$
+  \begin{enumerate}[label=\roman*)]
+  \item Calculate the average velocity of the car over the time interval $[20,21]$.
+  \item Calculate the velocity of the car at $t = 20$
+  \end{enumerate}
+  
+\end{problem}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Do not alter anything below this line.
+\end{document}
