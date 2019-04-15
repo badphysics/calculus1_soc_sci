@@ -1,0 +1,73 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Do not alter this block of commands.  If you're proficient at LaTeX, you may include additional packages, create macros, etc. immediately below this block of commands, but make sure to NOT alter the header, margin, and comment settings here. 
+\documentclass[10pt,letterpaper]{article}
+ \usepackage{geometry} 
+\usepackage{amsmath,amsthm,amssymb,amsfonts, enumitem, fancyhdr, color, comment, graphicx, environ,multicol}
+\pagestyle{fancy}
+%\setlength{\headheight}{65pt}
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{sol}
+    {\emph{Solution:}
+    }
+    {
+    \qed
+    }
+\specialcomment{com}{ \color{blue} \textbf{Comment:} }{\color{black}} %for instructor comments while grading
+\NewEnviron{probscore}{\marginpar{ \color{blue} \tiny Problem Score: \BODY \color{black} }}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Fill in the appropriate information below
+\lhead{Student's name}  %replace with your name
+\rhead{ In class Homework 8} %replace XYZ with the homework course number, semester (e.g. ``Spring 2019"), and assignment number.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Do not alter this block.
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%Solutions to problems go below.  Please follow the guidelines from https://www.overleaf.com/read/sfbcjxcgsnsk/
+{\large Steps to solve Maximum and Minimum problems}
+
+\begin{enumerate}
+\item {\bf Understand the problem:} The first step is to read the problem carefully until it is clearly understood.  What is unkown? What is given? Are there any conditions?
+\item {\bf Draw a diagram: } In most problems itis useful to draw a diagram and identify the given quantities on the diagram.
+\item{\bf Introduce notation: } Assign variables to the quantity, $Q$, to be maximized or minimized.  Also select symbols for other unknowns and label diagram with them.
+\item{\bf Express the variable to me optimized  } in terms of other variables.
+\item {\bf eliminate all but one variable} and write the domain of the function\
+  \item {\bf Find absolute max or min. }
+\end{enumerate}
+
+%Copy the following block of text for each problem in the assignment.
+\begin{problem}{1}
+   A farmer has 2000 ft of fencing and wants to fence off a rectangular field that borders a straight river.  He needs no fence along the river.  What are the dimensions of the field that has the largest area?
+   \end{problem}
+     
+  \problem{2} A can is to made to hold 1 L of maple syrup.  find the dimensions that will minimize the cost of the metal to make the can.
+
+  \problem{3} Find the point on the parabola $y^2 = 2x$ that is closest to the point $(1,4)$.
+
+  \problem{4} find the area of the largest rectangle that can be incribed in a semi circle of radius r.
+
+  \problem{5} A company estimates that the cost of producing $x$ items is $C(x) = 2600 + 2x + 0.001x^2$.
+  \begin{description}
+  \item[a.] Find the cost, the average cost, and the marginal cost of producing 1000 items, 2000 items, and 3000 items.
+  \item[b.] At what production level will the average cost be lowest, and what is this minimum cost?
+    
+  \end{description}
+
+  \problem{6}  What production level will maximize profits for a company with cost and demand functions $\displaystyle C(x) = 3800 + 5x -\frac{x^2}{1000}$, and $\displaystyle p(x) = 50-\frac{x}{100}$
+
+  \problem{7} A Norman window has the shape of a rectangle surmounted by a semicircle.  If the perimeter of the window is 30 ft, find the dimensions of the window so that the greatest possible amount of light is admitted.
+
+  \problem{8} A piece of wire 10 m long is cut into two pieces.  One piece is bent into a square and the other is bent into an equilateral triangle.  How should the wire be cut so that the total area enclosed is (a) a maximum? (b) a minimum?
+
+\end{document}

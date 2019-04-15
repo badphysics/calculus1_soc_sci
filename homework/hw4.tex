@@ -1,0 +1,90 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Do not alter this block of commands.  If you're proficient at LaTeX, you may include additional packages, create macros, etc. immediately below this block of commands, but make sure to NOT alter the header, margin, and comment settings here. 
+\documentclass[12pt,letterpaper]{article}
+ \usepackage{geometry} 
+\usepackage{amsmath,amsthm,amssymb,amsfonts, enumitem, fancyhdr, color, comment, graphicx, environ,multicol}
+\pagestyle{fancy}
+%\setlength{\headheight}{65pt}
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{sol}
+    {\emph{Solution:}
+    }
+    {
+    \qed
+    }
+\specialcomment{com}{ \color{blue} \textbf{Comment:} }{\color{black}} %for instructor comments while grading
+\NewEnviron{probscore}{\marginpar{ \color{blue} \tiny Problem Score: \BODY \color{black} }}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Fill in the appropriate information below
+\lhead{Student's name}  %replace with your name
+\rhead{ In class Homework 4} %replace XYZ with the homework course number, semester (e.g. ``Spring 2019"), and assignment number.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Do not alter this block.
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%Solutions to problems go below.  Please follow the guidelines from https://www.overleaf.com/read/sfbcjxcgsnsk/
+
+%Copy the following block of text for each problem in the assignment.
+\begin{problem}{1}
+Find the derivative of the following functions.  Simplify where appropriate
+\begin{multicols}{2}
+  \begin{enumerate}[label=\roman*)]
+  \item $y=(5x^4+1)^2 $
+  \item $ y=\sqrt[5]{-x^3-4}$
+  \item $ f(x) = (4x^5-1)\sqrt[3]{x+1}$
+  \item $g(x) = \sqrt{-x^4-1}(-x-2) $
+  \item $ y=(3x-1)(-3x^2-4)^{-3}$
+  \item $ y=\left(\frac{5x^5-3}{-3x^3+1}\right)^3$
+  \item $ f(x)=\left(\frac{x^5+4}{x^2-5}\right)^{\frac{1}{5}}$
+  \item $g(x) = \frac{\sqrt[5]{x^2-3}}{-x-5} $
+  \item $h(t) = (2t-1)^4+(2t+1)^4 $
+  \item $f(x) = \sqrt{\sqrt{x^3+1}}$
+  \end{enumerate}
+\end{multicols}
+\end{problem}
+%\begin{sol}
+%Write your solution here.
+%\end{sol}
+
+
+%Copy the following block of text for each problem in the assignment.
+\begin{problem}{2}
+  Find $\displaystyle \frac{dy}{dx}$, $\displaystyle \frac{du}{dx}$ and $\displaystyle\frac{dy}{dx}$ for each problem
+  \begin{enumerate}
+  \item $y = u^{5/2} $ and $u = 3x^2-1$.
+  \item $y = 2u^3+1 $ and $u = x^2+1$
+  \item $ y = \frac{1}{\sqrt{u}}-\sqrt{u}$ and $u = x^2+7$
+    \item $y = \frac{1}{u}$ and $u = \sqrt{x} +1$
+  \end{enumerate}
+\end{problem}
+%\begin{sol}
+%Write your solution here.
+%\end{sol}
+
+\begin{problem}{3}
+  Find the equation of the tangent line at the given point for the following problems.
+  \begin{enumerate}
+  \item $f(x) = (1-x)(x^2-1)^2$, $(2,-9)$
+  \item $f(x) = \left(\frac{x+1}{x-1} \right)^3$, $(3,4)$
+    \end{enumerate}
+\end{problem}
+
+  
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Do not alter anything below this line.
+\end{document}

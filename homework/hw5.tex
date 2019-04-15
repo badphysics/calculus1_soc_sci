@@ -1,0 +1,83 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Do not alter this block of commands.  If you're proficient at LaTeX, you may include additional packages, create macros, etc. immediately below this block of commands, but make sure to NOT alter the header, margin, and comment settings here. 
+\documentclass[12pt,letterpaper]{article}
+ \usepackage{geometry} 
+\usepackage{amsmath,amsthm,amssymb,amsfonts, enumitem, fancyhdr, color, comment, graphicx, environ,multicol}
+\pagestyle{fancy}
+%\setlength{\headheight}{65pt}
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{sol}
+    {\emph{Solution:}
+    }
+    {
+    \qed
+    }
+\specialcomment{com}{ \color{blue} \textbf{Comment:} }{\color{black}} %for instructor comments while grading
+\NewEnviron{probscore}{\marginpar{ \color{blue} \tiny Problem Score: \BODY \color{black} }}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Fill in the appropriate information below
+\lhead{Student's name}  %replace with your name
+\rhead{ In class Homework 5} %replace XYZ with the homework course number, semester (e.g. ``Spring 2019"), and assignment number.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Do not alter this block.
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%Solutions to problems go below.  Please follow the guidelines from https://www.overleaf.com/read/sfbcjxcgsnsk/
+
+%Copy the following block of text for each problem in the assignment.
+\begin{problem}{1}
+Find the first and second derivatives of the following functions
+\begin{multicols}{2}
+  \begin{enumerate}[label=\roman*)]
+  \item $ f(x) = 3x^4-2x^3 + 10 x^2 $
+  \item $ f(x) = (x+1)^{10}$
+  \item $ f(x) = (2x^2-1)^4$
+  \item $ g(x) = \displaystyle\frac{2x}{\sqrt{x+1}}$
+  \item $h(s) = \displaystyle\frac{s-1}{s+1}$
+  \item $g(u) = \displaystyle\frac{u^2}{u^2+1}$
+  \item $f(x) = \sqrt{2x+3x^2}$
+  \item $g(x) = \displaystyle\frac{\sqrt{2x+1}}{\sqrt{1-3x}}$
+  \end{enumerate}
+\end{multicols}
+\end{problem}
+%\begin{sol}
+%Write your solution here.
+%\end{sol}
+
+\begin{problem}{2}
+Find the third derivative of the following functions
+\begin{multicols}{2}
+  \begin{enumerate}[label=\roman*)]
+  \item $\displaystyle f(x) = \frac{1}{x}$
+  \item $ \displaystyle g(t) = \sqrt{3t+1}$
+  \item $\displaystyle h(s) = (2+3s)^4$
+    \item $\displaystyle f(x) = (\frac{1}{2}x^2-1)^5$
+  \end{enumerate}
+\end{multicols}
+\end{problem}
+
+
+\noindent In addition to the above, you should do the following
+\begin{itemize}
+\item section 3.4 questions 3-17
+\item section 3.5 questions 1-28
+  
+\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Do not alter anything below this line.
+
+\end{document}

@@ -1,0 +1,151 @@
+\documentclass[12pt,letterpaper]{exam}
+\RequirePackage{amssymb, amsfonts, amsmath, latexsym, verbatim, xspace, setspace, mathrsfs}
+\usepackage{amsmath,amsthm,amssymb,amsfonts, 
+hyperref, color, graphicx, enumitem}
+\RequirePackage{tikz, pgflibraryplotmarks}
+\usepackage{geometry}
+\usepackage{graphicx}
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+ \everymath{\displaystyle}
+\newenvironment{problem}[2][Problem:]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2}]}{\end{trivlist}}
+
+\newenvironment{claim}[2][Claim:]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2}]}{\end{trivlist}}
+
+\newenvironment{defn}[2][Definition:]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2}]}{\end{trivlist}}
+
+% Here's where you edit the Class, Exam, Date, etc.
+\newcommand{\class}{Calculus 1 for Social Sciences}
+\newcommand{\term}{Winter 2019}
+\newcommand{\examnum}{}
+\newcommand{\examdate}{Exam 2}
+\newcommand{\timelimit}{90 min}
+
+% For an exam, single spacing is most appropriate
+\singlespacing
+% \onehalfspacing
+% \doublespacing
+
+% For an exam, we generally want to turn off paragraph indentation
+\parindent 0ex
+
+\begin{document} 
+
+% These commands set up the running header on the top of the exam pages
+\pagestyle{head}
+\firstpageheader{Name:}{Exam 2}{}
+\runningheader{\class}{\examnum\ - Page \thepage\ of \numpages}{\examdate}
+\runningheadrule
+
+\begin{flushright}
+\begin{tabular}{p{2.8in} r l}
+\textbf{\class} & \textbf{Name:} & \makebox[2in]{\hrulefill}\\
+\textbf{\term} &&\textbf{\examnum}\\
+\textbf{\examdate} &&
+\textbf{Time Limit: \timelimit}  \\ 
+\end{tabular}\\
+\end{flushright}
+\rule[1ex]{\textwidth}{.1pt}
+
+
+
+
+\begin{minipage}[t]{3.7in}
+\vspace{0pt}
+\begin{itemize}
+
+\item \textbf{DO NOT open the exam booklet until you are told to begin. You should write your name and section number at the top and read the instructions.}
+
+\vfill
+
+\item Organize your work, in a reasonably neat and coherent way, in
+the space provided. If you wish for something to not be graded, please strike it out neatly. I will grade only work on the exam paper, unless you clearly indicate your desire for me to grade work on additional pages.
+
+
+\item You needn't spend your time rewriting definitions or axioms on the exam.
+
+\item {\bf Show all your work.  Correct answers without supporting work may not receive credit.}
+  
+\end{itemize}
+
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{2.3in}
+\vspace{0pt}
+%\cellwidth{3em}
+\gradetablestretch{2}
+%Uncomment this line to make the table display 100 as the total no matter what. This is good for tests with an ommit question.
+%\settabletotalpoints{100}
+\vqword{Problem}
+\addpoints % required here by exam.cls, even though questions haven't started yet.	
+\gradetable[v]%[pages]  % Use [pages] to have grading table by page instead of question
+
+\end{minipage}
+
+\begin{itemize}
+
+\item When you have completed your test, hand it to me and have a great night.
+
+
+\end{itemize}
+
+\newpage
+
+\begin{questions}
+\addpoints
+\question[5] Find $dy/dx$ by implicit differentiation for the  expressions $x^2y^{1/2} = x+2y^3$
+  \vfill
+
+\question[8] find the second derivative of the function $\displaystyle f(x) = \sqrt{3x+1}$ 
+  \vfill
+  
+\question[7] Find the equation of the tangent line to the function defined by the equation $4x^2 + 9y^2 = 16$ at the point $(2,2\sqrt{5})$
+\vfill
+
+\newpage
+\addpoints
+
+\question Compute the derivatives of the following functions.  Show all of your work.
+\begin{parts}
+\part[5] $f(x) = (3x^2+2x+1)^{-2}$
+\vfill
+\part[5] $g(x) = \displaystyle\sqrt{\frac{2x+1}{2x-1}}$
+\vfill
+\end{parts}
+
+
+\newpage 
+\addpoints
+
+\question[10] A car leaves an intersection traveling west its position 4 sec later is 20 ft from the intersection.  At the same time, another car leaves the same intersection heading north so that its position 4 sec later is 28 ft from the intersection.  If the speeds of the cars at that instant of time are 8 ft/sec and 11 ft/sec, respectively, find the rate at which the distance between the two cars is changing.
+\vfill
+
+\newpage
+\addpoints
+\question The weekly demand for LED tvs is $p = 600-0.5x$, where $p$ denotes the wholesale unit price in dollars and $x$ denotes the quantity demanded.  The weekly total costs function is given by $C(x) = 0.000002x^3 - 0.03x^2 + 400x + 80000$ where $C(x)$ denotes the the total cost incurred in producing $x$ sets.
+\begin{parts}
+  \part[4] find the revenue function and profit function.
+\vfill
+  \part[4] find the marginal cost function and the marginal revenue function.
+\vfill
+  \part[2] Compute $C'(2000)$ and $R'(2000)$ and interpret your results.
+\vfill
+  \part[4] Find the average cost function.
+\vfill
+  \part[4] Find the marginal average cost function.
+\vfill
+  \part[2] Compute $\bar{C}'(500)$ and $\bar{C}'(10000)$ and interpret your results.
+\vfill
+\end{parts}
+
+
+
+
+\end{questions}
+\end{document}

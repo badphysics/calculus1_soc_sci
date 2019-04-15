@@ -1,0 +1,79 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Do not alter this block of commands.  If you're proficient at LaTeX, you may include additional packages, create macros, etc. immediately below this block of commands, but make sure to NOT alter the header, margin, and comment settings here. 
+\documentclass[12pt,letterpaper]{article}
+ \usepackage{geometry} 
+\usepackage{amsmath,amsthm,amssymb,amsfonts, enumitem, fancyhdr, color, comment, graphicx, environ,multicol}
+\pagestyle{fancy}
+%\setlength{\headheight}{65pt}
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{sol}
+    {\emph{Solution:}
+    }
+    {
+    \qed
+    }
+\specialcomment{com}{ \color{blue} \textbf{Comment:} }{\color{black}} %for instructor comments while grading
+\NewEnviron{probscore}{\marginpar{ \color{blue} \tiny Problem Score: \BODY \color{black} }}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Fill in the appropriate information below
+\lhead{Student's name}  %replace with your name
+\rhead{ In class Homework 6} %replace XYZ with the homework course number, semester (e.g. ``Spring 2019"), and assignment number.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Do not alter this block.
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%Solutions to problems go below.  Please follow the guidelines from https://www.overleaf.com/read/sfbcjxcgsnsk/
+
+%Copy the following block of text for each problem in the assignment.
+\begin{problem}{1}
+A ladder 8 m long leans against a model home. If the bottom of the ladder slides
+away from the building horizontally at a rate of 0.75 m/sec, how fast is the laddersliding down the model home when the top of the ladder is 5 m from the ground?
+\end{problem}
+
+\begin{problem}{2}
+A car and a plane are racing each other. Both start at the same position, with the plane being 500 m above the car. The car has a maximum speed of 200 km/h
+and the plane has a maximum speed of 300 km/h. What is the rate of change of
+the distance between the plane and the car when both are at maximum speed
+and the plane is ahead by 70 m?
+\end{problem}
+
+\begin{problem}{3}
+A cylindrical fountain is filled with juice. The can has a 10 cm radius. How fast does the height of the juice in the can drop when the drink is being drained at 5 cm$^3$/sec?
+\end{problem}
+
+\begin{problem}{4}
+The radius of a particular circle increases at 1 millimeter each second. As a result, its area changes. Question: How fast is its area changing [at some particular instant]? 
+\end{problem}
+
+\begin{problem}{5}
+  The monthly revenue $R$ in dollars of a telephone polling service is related to the number $x$ of completed responses by the function
+  $$
+  R(x) = -13450+60\sqrt{6x^2+20x},
+  $$
+  where $0\leq x\leq 1500$.  If the number of complete responses is increasing at a rate of 10 forms per month, find the rate at which the monthly revenue is changing when $x=700$.
+\end{problem}
+
+\begin{problem}{6}
+Suppose the border of a town is roughly circular, and the radius of that circle has been increasing at a rate of 0.1 miles each year. Find how fast the area of the town has been increasing when the radius is 5 miles.
+\end{problem}
+
+\begin{problem}{7}
+A company has determined the demand curve for their product is $q=\sqrt{5000-p^2}$, where $p$ is the price in dollars, and $q$ is the quantity in millions. If weather conditions are driving the price up \$2 a week, find the rate at which demand is changing when the price is \$40.
+\end{problem}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Do not alter anything below this line.
+
+\end{document}
