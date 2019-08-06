@@ -1,0 +1,7 @@
+*.log
+*.aux
+*~
+*.out
+classlist-201103DW-3001.pdf
+*.csv
+*.ods

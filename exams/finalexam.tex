@@ -1,0 +1,418 @@
+\documentclass[12pt,letterpaper,addpoints]{exam}
+\RequirePackage{amssymb, amsfonts, amsmath, latexsym, verbatim, xspace, setspace, mathrsfs}
+\usepackage{amsmath,amsthm,amssymb,amsfonts, 
+hyperref, color, graphicx, enumitem,multicol}
+\RequirePackage{tikz, pgflibraryplotmarks}
+
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{pstricks-add}
+\usepackage{auto-pst-pdf}
+\usepackage{tkz-euclide}
+\usetkzobj{all}
+\usepackage{sansmath}
+\usepackage{etoolbox}
+\pretocmd{\pshlabel}{\color{RoyalBlue4}\sansmath}{}{}
+\pretocmd{\psvlabel}{\color{RoyalBlue4}\sansmath}{}{}{}%
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+ \everymath{\displaystyle}
+\newenvironment{problem}[2][Problem:]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2}]}{\end{trivlist}}
+
+\newenvironment{claim}[2][Claim:]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2}]}{\end{trivlist}}
+
+\newenvironment{defn}[2][Definition:]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2}]}{\end{trivlist}}
+
+% Here's where you edit the Class, Exam, Date, etc.
+\newcommand{\class}{Calculus 1 for Social Science}
+\newcommand{\term}{Summer 2019}
+\newcommand{\examnum}{}
+\newcommand{\examdate}{Final Exam}
+\newcommand{\timelimit}{180 min}
+
+% For an exam, single spacing is most appropriate
+\singlespacing
+% \onehalfspacing
+% \doublespacing
+
+% For an exam, we generally want to turn off paragraph indentation
+\parindent 0ex
+
+\begin{document} 
+
+% These commands set up the running header on the top of the exam pages
+\pagestyle{head}
+\firstpageheader{Name:}{Final Exam}{}
+\runningheader{\class}{\examnum\ - Page \thepage\ of \numpages}{\examdate}
+\runningheadrule
+
+\begin{flushright}
+\begin{tabular}{p{2.8in} r l}
+\textbf{\class} & \textbf{Name:} & \makebox[2in]{\hrulefill}\\
+\textbf{\term} &&\textbf{\examnum}\\
+\textbf{\examdate} &&
+\textbf{Time Limit: \timelimit}  \\ 
+\end{tabular}\\
+\end{flushright}
+\rule[1ex]{\textwidth}{.1pt}
+
+
+
+
+\begin{minipage}[t]{\textwidth}
+\vspace{0pt}
+\begin{itemize}
+
+\item \textbf{DO NOT open the exam booklet until you are told to begin. You should write your name and section number at the top and read the instructions.}
+
+\vfill
+
+\item Organize your work, in a reasonably neat and coherent way, in
+the space provided. If you wish for something to not be graded, please strike it out neatly. I will grade only work on the exam paper, unless you clearly indicate your desire for me to grade work on additional pages.
+
+\item You may use any results from class, homework or the text, but you must cite the result you are using. You must prove everything else.
+
+\item You needn't spend your time rewriting definitions or axioms on the exam.
+
+\item Show all of your work.  You may not receive full credit for correct answers if supporting work is not demonstrated.
+\end{itemize}
+
+
+\end{minipage}
+\hfill
+
+\begin{minipage}[t]{2.3in}
+\vspace{3pt}
+\cellwidth{1.5em}
+\gradetablestretch{1.5}
+%Uncomment this line to make the table display 100 as the total no matter what. This is good for tests with an ommit question.
+%\settabletotalpoints{100}
+\vqword{Problem}
+\addpoints % required here by exam.cls, even though questions haven't started yet.	
+\gradetable[h]%[pages]  % Use [pages] to have grading table by page instead of question
+
+\end{minipage}
+
+
+\newpage
+\addpoints
+\begin{questions}
+
+\question Evaluate the following limits.  If it doesn't exist, explain why.
+
+\begin{parts}
+  \part[4] $\displaystyle\lim_{x\rightarrow 4} \frac{x^2-16}{x-4}$
+  \begin{solution}
+  8
+  \end{solution}
+  
+  \vfill
+
+\part[4] $\displaystyle\lim_{x\rightarrow\infty} \frac{5x^4-3x+2}{7x^4+3x^2-1} $
+\begin{solution}
+$\displaystyle\frac{5}{7}$
+\end{solution}
+
+\vfill
+
+\part[4] $\displaystyle\lim_{\displaystyle x\rightarrow0^+}\frac{1}{1+2^{-1/x}}$
+\begin{solution}
+$1$
+\end{solution}
+
+\vfill
+\end{parts}
+
+\newpage
+\addpoints
+
+
+\question[5] Use the definition of the derivative to determine the derivative of $f(x) = \frac{-1}{x}$
+\begin{solution}
+$f'(x) = \frac{2}{x^3}$
+\end{solution}
+
+\vfill
+\question[5] Find the values of $x$ for which the function $f(x)$ is discontinuous. $$\displaystyle f(x)=\begin{cases} -2x+1 & \text{if}\;\; x<0 \\ x^2+1 & \text{if} \;\; 0\leq x \leq 1  \\ \sqrt{x+1} & \text{if} \;\; 1<x< \infty \end{cases}$$
+
+\begin{solution}
+$x=1,5$
+\end{solution}
+
+%% \question[5] Calculate $\displaystyle \lim_{x\rightarrow\infty} \frac{3x^3-x +1}{7x^3+88x^2-7}$
+\vfill
+
+\newpage
+\addpoints
+
+\question For the function $f(x) = \displaystyle x^3+2x^2+x$
+\begin{parts}
+  \part[3] Find the critical numbers.
+  \begin{solution}
+    $x=0,2$
+  \end{solution}
+  
+  \vfill
+  \part[3] Find the intervals where $f(x)$ is increasing and decreasing and identify any relative maximum and minimum values.
+  \begin{solution}
+    increasing on $(-\infty,0)$ and $(2,\infty)$.  decreasing on $(0,2)$.  Relative maximum at $x=0$, relative minimum at $x=2$
+  \end{solution}
+\vfill
+    \part[5] Find the regions of concavity.
+  \begin{solution}
+    Concave up on $(\sqrt[3]{2},\infty)$, Concave down on $(-\infty,\sqrt[2]{2})$
+  \end{solution}
+  
+
+\vfill
+
+  \vfill
+  \part[2] Find the $x$-coordinate of any inflection points.
+  \begin{solution}
+    $x=\sqrt[3]{2}$
+  \end{solution}
+  
+  \vfill
+\newpage
+\addpoints
+
+\part[5] Plot the function.
+
+\psset{unit=8mm, ticks=none, xlabelsep=1pt, ylabelsep=1pt, arrowinset=0.12}%, l
+
+\psset{gridwidth=.7pt, subgriddiv=1,gridlabels=0pt}
+\begin{pspicture*}(-8,-8.5)(8,8)
+\psgrid(-8,-8)(8,8.5)
+%\psaxes[labelFontSize=\scriptstyle, linecolor=SteelBlue]{<->}(0,0)(-8,-8)(8,8)[\textsf{X}\rule{0pt}{2.25ex} ,-120][\textsf{Y} , -150]
+\psset{linecolor=DodgerBlue4, tickcolor=white, subtickcolor=DodgerBlue4, gridlabelcolor=DodgerBlue4, ,linewidth = 1.2pt}%
+\end{pspicture*}
+
+\end{parts}
+
+\question[5]  Find the equation of the tangent line to the curve $y^2=x^3(2-x)$ at the point $(x,y)=(-1,2)$.
+\begin{solution}
+$y=5x+3$
+\end{solution}
+
+\vfill
+
+
+\newpage
+\addpoints
+\question Find $\displaystyle\frac{dy}{dx}$ for the following equations.
+\begin{parts}
+  \part[5] $y = \tan(x^3+1)$
+  \begin{solution}
+    $y'=3x^2(\tan^2(x^3+1)+1)$
+  \end{solution}
+  
+\vfill
+  \part[5] $y = \displaystyle \arcsin\left(e^{2x}\right)$
+  \begin{solution}
+    $y'=\displaystyle\frac{2e^{2x}}{\sqrt{-e^{4x}+1}}$
+  \end{solution}
+  \vfill
+  \part[5] $y = (x^2+1)\arctan(\sqrt{x})$
+  \begin{solution}
+    $2x\arctan(\sqrt{x}) + \frac{(x^2+1)}{2\sqrt{x}(x+1)}$
+  \end{solution}
+  
+\vfill
+\end{parts}
+
+
+\question[5] Use Logorithmic differentiation to find the derivative of $y=\displaystyle \frac{\displaystyle(x^3+1)^4\sin^2(x)}{\displaystyle\sqrt[3]{x}}$.  DO NOT SIMPLIFY YOUR ANSWER.
+\begin{solution}
+$\displaystyle\left(\frac{12x^2}{x^3+1}+2\cot(x)-\frac{1}{3x} \right)\left(\frac{\displaystyle(x^3+1)^4\sin^2(x)}{\displaystyle\sqrt[3]{x}} \right)$
+\end{solution}
+
+\vfill
+
+\newpage
+\addpoints
+
+
+\question A company's cost function and demand function are given by
+$$
+C(x) = 3800 + 5x-\frac{x^2}{1000} \;\;\text{and}\;\; p(x) = 50-\frac{x}{100} \;\; \text{for}\;\;0\leq x\leq 1000.
+$$
+
+\begin{parts}
+  \part[4] Compute $C'(300)$ and give an interpretation of the results.
+  \begin{solution}
+    $\frac{22}{5}$, this is the cost of producing the 301 unit.
+  \end{solution}
+  
+  \vfill
+  \part[2] Find the revenue function $R(x)$.
+  \begin{solution}
+    $R(x) = 50x-\frac{x^2}{100}$
+  \end{solution}
+  
+  %% \vfill
+  
+  %% \part[3] Compute $R'(300)$ and give an interpretation of the results.
+  %% \begin{solution}
+  %%   $50-\frac{300}{50}$, this is the revenue obtained from the 301 unit.
+  %% \end{solution}
+  
+  \vfill
+  \part[4] Find the profit function $P(x)$ and the demand level which maximizes profit.
+  \begin{solution}
+    $P(x) = \frac{-9x^2}{1000}+45x-3800$, and $x=2500$
+  \end{solution}
+  
+\end{parts}
+\vfill
+
+\newpage
+\addpoints
+
+\question[5] Find the horizontal (if any) and vertical (if any) asymptote(s) of the function $$f(x) = \frac{2x^2-6x}{x^2-9}$$
+\begin{solution}
+vertical asymptote $x=- 3$ and horizontal asymptote $y=2$
+\end{solution}
+
+\vfill
+
+\question[10]
+A box with an open top and a square base is to have a volume of 32000 cm$^3$.
+Find dimensions of the box which will minimize the surface area of the box.
+\begin{solution}
+40 cm by 40 cm by 20 cm
+\end{solution}
+\vfill
+
+\newpage
+\addpoints
+
+\question[10] A ladder 10ft long rests against a vertical wall.  If the bottom of the ladder slides away from the wall at a rate of 2 ft/s, how fast is the top of the ladder sliding down the wall when the bottom of the ladder is 6ft from the wall?
+
+\begin{solution}
+1.5 ft/s
+  \end{solution}
+%% \question[5] Factor completely $7x^3 - 42x^2y+63xy^2$.
+
+%% \question[5] Factor completely $6x^2 + 13x -5$.
+
+%% \question[5] Solve the system of linear equations using the method of your choosing $\begin{cases} 2x+y = 3 \\ 3x-4y=1 \end{cases}$
+
+%% \question[5] Find the equation of the line perpendicular to the line $y=\frac{1}{3}x+1$ going through the point $(4,2)$.
+
+%% \question[5] Graph the line $2x - y = 2$
+
+%%   \psset{unit=6mm, ticks=none, xlabelsep=1pt, ylabelsep=1pt, arrowinset=0.12}%, l
+%% \psset{gridwidth=0.3pt, subgriddiv=1,gridlabels=0pt}
+%% \begin{pspicture*}(-8,-8.5)(8,8)
+%% \psgrid(-8,-8)(8,8.5)
+%% \psaxes[labelFontSize=\scriptstyle, linecolor=SteelBlue]{<->}(0,0)(-8,-8)(8,8)[\textsf{X}\rule{0pt}{2.25ex} ,-120][\textsf{Y} , -150]
+%% \psset{linecolor=DodgerBlue4, tickcolor=white, subtickcolor=DodgerBlue4, gridlabelcolor=DodgerBlue4, ,linewidth = 1.2pt}%
+%% \end{pspicture*}
+
+%% \question[5] Find the value of $x$ in the following triangle.
+
+%% \begin{tikzpicture}[thick]
+%% \draw(0,0) -- (90:2cm) node[midway,left]{$x-3$} -- (0:4cm) node[midway,above right]{$7$} -- (0,0) node[midway,below]{$5$};
+%% \end{tikzpicture}
+
+%% \question[5] Rationalize the denominator and simplify. $\displaystyle \frac{\sqrt{2}}{3-\sqrt{2}}$
+
+%% \question[5] Simplify and write with only positive exponents. $\displaystyle \frac{(x^4)^{-2}(yx^{-1})^2}{(2xy)^{-1}}$
+
+%% \question[5] Perform the operations and write the answer in lowest terms.  Assume all numerators and enominators are nonzero. $\displaystyle\frac{(3x+2)(2x-3)}{3x+17x+10}\div\frac{(x-3)(2x-3)}{x(x+5)}$
+
+%% \question[5] for the quadratic function $f(x) = -2x^2 + 8x - 5$
+%% \begin{description}
+%% \item[a.] Find the $x$ and $y$ intercepts
+%% \item[b.] find the vertex.
+%% \end{description}
+
+%% \question[5] The sum of 3 consecutive even numbers is 132.  Find the numbers.
+
+%% \question[5] Simplify $(2\sqrt{5}+\sqrt{3})\cdot(3\sqrt{5}-5\sqrt{3})$
+
+%% %\question[5] Simplify $(3x^2y - 5xy^2 - xy + 5) - (5x^2y + 3xy^2 +x +5)$
+
+%% \question[5] Solve $\log_{\sqrt{2}} (1-3x) = 2$
+
+%% \question[5] Simplify and write answer in lowest terms $\displaystyle\frac{\displaystyle\left(\frac{2x+1}{4}\right)}{\displaystyle \left( 5-\frac{3}{x}\right)}$
+
+%% \question[5] Dennis mowed his next door neighbour's lawn for a handful of dimes and nickels, 80 coins in all.  Upon completing the job he counted out the coins and it came to \$6.60.  How many of each coin does he have?
+
+%% \question[5] Solve $49x^2-196 = 0$
+
+%% \question[5] Solve $\sqrt{2x+1} - 3 = x -4$
+
+%% \question[5] Perform the operations and write the answer in lowest terms. $$\displaystyle \frac{5x}{x^2-1}-\frac{4}{x^2+x-2}$$
+
+%% \question[5]  A rectangle has sides of length $x+3$ and $4x-1$ and has total area of 270.  Find the length of each side.
+
+
+%% \question[5] For the triangle below
+%% \begin{description}
+
+%% \item[a.] find $\sin\beta$, $\cos\beta$ and $\tan\beta$
+%% \item[b.] calculate $\sin\beta$ + $\cos\alpha$
+%% \item[c.] calculate $\sin^2\beta + \cos^2\beta$.
+%% \end{description}
+
+%% \begin{tikzpicture}[thick]
+%% \coordinate (O) at (0,0);
+%% \coordinate (A) at (4,0);
+%% \coordinate (B) at (0,2);
+%% \draw (O)--(A)--(B)--cycle;
+
+%% %\tkzLabelSegment[below=2pt](O,A){\textit{adjacent leg}}
+%% \tkzLabelSegment[left=2pt](O,B){2}
+%% \tkzLabelSegment[above right=2pt](A,B){8}
+
+%% \tkzMarkRightAngle[size=0.5,opacity=.4](A,O,B)% square angle here
+%% %\tkzLabelAngle[pos = 0.35](A,O,B){$\gamma$}
+
+%% \tkzMarkAngle[size=.99cm,%
+%% opacity=.4](B,A,O)
+%% \tkzLabelAngle[pos = 0.75](B,A,O){$\alpha$}
+
+%% \tkzMarkAngle[size=0.9cm,%
+%% opacity=.4](O,B,A)
+%% \tkzLabelAngle[pos = 0.5](O,B,A){$\beta$}
+
+%% \end{tikzpicture}
+
+
+%% \section*{answers}
+%% \begin{multicols}{2}
+  
+%% \begin{enumerate}
+%% \item $7x(x-3y)^2)$
+%% \item $(2x+5)(3x-1)$
+%% \item $(x,y)=(\frac{13}{11},\frac{7}{11})$
+%% \item $y=-3x+14$
+%% \item line with y intercept $y=-2$ and $x$ intercept $x=1$
+%% \item $3+2\sqrt{6}$
+%% \item $\frac{2+3\sqrt{2}}{7}$
+%% \item $\frac{2y^3}{x^9}$
+%% \item $\frac{x}{x-3}$
+%% \item a. $y=-5$, $x=2\pm\frac{\sqrt{6}}{2}$ b. $(x,y)=(2,3)$
+%% \item 42,44,46
+%% \item $15 -7\sqrt(15)$
+%% \item $x=-\frac{1}{3}$
+%% \item $\frac{x(2x+1)}{4(5x-3)}$
+%% \item 52 dimes and 28 nickels
+%% \item $\pm 2$
+%% \item $2+\sqrt(2)$
+%% \item $\frac{5x^2+6x-4}{x^3+2x-x-2}$
+%% \item 10,27
+%%   \item a. $\sin(\beta)=\sqrt{15}/4$,$\cos(\beta)=1/4$, $\tan(\beta)=\sqrt{15}$ b. $\sqrt{15}/2$, c. 1
+  
+%% \end{enumerate}
+
+%% \end{multicols}
+    
+
+\end{questions}
+\end{document}

@@ -5,6 +5,9 @@ hyperref, color, graphicx, enumitem}
 \RequirePackage{tikz, pgflibraryplotmarks}
 \usepackage{geometry}
 \usepackage{graphicx}
+\usepackage{pstricks-add}
+\usepackage{auto-pst-pdf}
+
 
 \newcommand{\N}{\mathbb{N}}
 \newcommand{\Z}{\mathbb{Z}}
@@ -21,9 +24,9 @@ hyperref, color, graphicx, enumitem}
 
 % Here's where you edit the Class, Exam, Date, etc.
 \newcommand{\class}{Calculus 1 for Social Sciences}
-\newcommand{\term}{Winter 2019}
+\newcommand{\term}{Summer 2019}
 \newcommand{\examnum}{}
-\newcommand{\examdate}{Exam 2}
+\newcommand{\examdate}{Exam 3}
 \newcommand{\timelimit}{90 min}
 
 % For an exam, single spacing is most appropriate
@@ -38,7 +41,7 @@ hyperref, color, graphicx, enumitem}
 
 % These commands set up the running header on the top of the exam pages
 \pagestyle{head}
-\firstpageheader{Name:}{Exam 2}{}
+\firstpageheader{Name:}{Exam 3}{}
 \runningheader{\class}{\examnum\ - Page \thepage\ of \numpages}{\examdate}
 \runningheadrule
 
@@ -97,56 +100,70 @@ the space provided. If you wish for something to not be graded, please strike it
 
 \newpage
 
+\addpoints
 \begin{questions}
-\addpoints
-\question[5] Find $dy/dx$ if $y = \left( (2x+2)^3+3 \right)^2$, don't worry about simplifying. (hint: use the chain rule twice)
-  \vfill
-
-\question[8] find the second derivative of the function $\displaystyle f(x) = \sqrt{3x+1}$ 
-  \vfill
-
-\question[5] Find the 4th derivative of the function $f(x) = x^3-2x^2+3x-1$
-\vfill
-
-\newpage
-\addpoints
-
-\question[5] Find the equation of the tangent line to the function $f(x) = \displaystyle (2x^2-1)^4$ at the point $(0,1)$.
-\vfill
-
-
-
-\newpage
-\addpoints
-
-\question Compute the derivatives of the following functions.  Show all of your work.
+\question Find $\displaystyle\frac{dy}{dx}$ for the following expressions
 \begin{parts}
-\part[5] $f(x) = (3x^2+2x+1)^{-2}$
-\vfill
-\part[5] $g(x) = (5x^4+1)^2$
-\vfill
-\part[5] $h(x) = \displaystyle\sqrt[5]{-x^3-4}$
-\vfill
+  \part[5] $y^2x+xy=1$
+  \vfill
+
+  \part[5] $\sqrt[3]{y} + xy = 2x$
+  \vfill
+
 \end{parts}
 
 
-%\newpage 
-%\addpoints
-
-%\question[10] A car leaves an intersection traveling west its position 4 sec later is 20 ft from the intersection.  At the same time, another car leaves the same intersection heading north so that its position 4 sec later is 28 ft from the intersection.  If the speeds of the cars at that instant of time are 8 ft/sec and 11 ft/sec, respectively, find the rate at which the distance between the two cars is changing.
-%\vfill
 
 \newpage
+
+
 \addpoints
-\question The weekly demand for LED tvs is $p = 600-0.5x$, where $p$ denotes the wholesale unit price in dollars and $x$ denotes the quantity demanded.  The weekly total costs function is given by $C(x) = 0.000002x^3 - 0.03x^2 + 400x + 80000$ where $C(x)$ denotes the the total cost incurred in producing $x$ sets.
+\question For the function $f(x) =x^4-4x^2$
 \begin{parts}
-  \part[4] find the revenue function and profit function.
-\vfill
-  \part[4] find the marginal cost function and the marginal revenue function.
-\vfill
-  \part[4] Compute $C'(2000)$ and $R'(2000)$ and interpret your results.
-\vfill
+
+  \part[2] find the domain of $f(x)$.
+  \vfill
+
+  \part[2] what are the $x$ and $y$ intercepts
+
+  \vfill
+
+  \part[3] Find the critical numbers of $f(x)$.
+  \vfill
+
+  \newpage
+  \addpoints
+
+  \part[5] Find the intervals where $f(x)$ is increasing and decreasing and determine any relative maximum or minimum values.
+  \vfill
+
+
+  \part[5] Find the intervals of concavity.
+  \vfill
+
+    \part[3] Find the inflection points of $f(x)$
+
+
+  
 \end{parts}
+\newpage
+\addpoints
+\question[10] Using the information in the previous question plot the graph on the grid below
+
+
+  \psset{unit=6mm, ticks=none, xlabelsep=1pt, ylabelsep=1pt, arrowinset=0.12}%, l
+\psset{gridwidth=0.3pt, subgriddiv=1,gridlabels=0pt}
+\begin{pspicture*}(-13,-13)(13,13)
+\psgrid(-13,-13)(13,13.5)
+%\psaxes[labelFontSize=\scriptstyle, linecolor=SteelBlue]{<->}(0,0)(-13,-13)(13,13)[\textsf{X}\rule{0pt}{2.25ex} ,-120][\textsf{Y} , -150]
+\psset{linecolor=DodgerBlue4, tickcolor=white, subtickcolor=DodgerBlue4, gridlabelcolor=DodgerBlue4, ,linewidth = 1.2pt}%
+\end{pspicture*}
+
+  
+\newpage
+\question[10]
+
+Suppose the border of a town is roughly circular, and the radius of that circle has been increasing at a rate of 0.2 miles each year.  Find how fast the area of the town has been increasing when the radius is 4 miles. (note: the area of a circle is given by $A = \pi r^2$ where $r$ is the radius.)
 
 
 

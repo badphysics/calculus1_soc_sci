@@ -1,0 +1,96 @@
+---
+title: "Extra Homework Set 5"
+author: 
+affiliation: "Dawson College Math 103"
+abstract:
+thanks:
+keywords:
+date:
+output:
+   html_document:
+    highlight: default
+    citation_package:
+    keep_tex: false
+    fig_caption: true
+    latex_engine: pdflatex
+fontsize: 11pt
+geometry: margin=1in
+bibliography:
+biblio-style:
+header-includes:
+- \usepackage{indentfirst}
+- \usepackage{graphicx}
+- \usepackage{geometry}
+- \usepackage{subfigure}
+- \usepackage{amsmath}
+- \usepackage{listings}
+- \usepackage{tikz}
+- \usetikzlibrary{matrix}
+---
+
+\vspace{0.25in}
+
+
+
+# 1. 
+
+Use the requirement of continuity to determine if the following functions are continuous at the indicated points.
+
+a. $f(x) = \displaystyle\frac{4x+5}{9-3x}$
+   * $x=1$
+   * $x=0$
+   * $x=3$
+
+b. $g(z) = \displaystyle\frac{6}{z^2-3z-10}$
+   * $z=-2$
+   * $z=4$
+   * $z=5$
+
+c. $g(x) = \displaystyle \begin{cases} 2x & x < 6 \\ x-1 & x\geq 6 \end{cases}$
+
+   * $x=4$
+   * $x=6$
+
+d. $g(x) = \displaystyle \begin{cases} 1-3x & x<-6 \\ 7 & x=-6 \\ x^3 & -6 < x < 1 \\ 1 & x=1 \\ 2-x & x>1 \end{cases}
+
+   * $x=-6$
+   * $x=1$
+   
+**answers**:
+
+a. continuous, continuous, not continuous 
+b. not continuous, continuous, not continuous
+c. continuous, not continuous
+d. not continuous, continuous
+
+# 2.
+
+Determine where the following functions are discontinuous
+
+a. $f(x) = \displaystyle\frac{x^2-9}{3x^2+2x-8}$
+
+b. $f(t) = \displaystyle\frac{8t}{t^2-9t-1}$
+
+**answer**:
+a. $x = 4/3$ and $x=-2$
+b. $t = \displaystyle \frac{9 \pm \sqrt{85}}{2}$
+
+# 3.
+
+Find the derivative of the following functions.
+
+a. $f(t) = (4t^2-t)(t^3-8t^2+12)$
+b. $y = (t+\sqrt{x^3})(x^-3-2\sqrt[3]{x})$
+c. $h(z) = (1+2z+3z^2)(5z+8z^2-z^3)$
+d. $f(x) = \displaystyle\frac{6x^2}{2-x}$
+e. $R(w) = \displaystyle\frac{3w+w^4}{2w^2+1}$
+
+
+**answers**:
+
+a. $f'(t) = (8t-1)(t^3-8t^2+12)+(4t^2-t)(3t^2-16t)$
+b. $y' = \displaystyle\left(\frac{3}{2}x^{\frac{1}{2}}\right)(x^{-3}-2x^{\frac{1}{2}})+(1+x^{\frac{3}{2}})(-3x^{-4}-\frac{2}{3}x^{-\frac{2}{3}})$
+c. $h'(z) = 5 + 36z+90z^2+88z^3-15z^4$
+d. $f'(x) = \displaystyle\frac{24x-6x^2}{(2-x)^2}$
+e. $R'(w) = \displaystyle\frac{4w^5+4w^3-6w^2+3}{(2w^2+1)^2}$ 
+

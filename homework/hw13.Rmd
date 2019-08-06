@@ -1,0 +1,77 @@
+---
+title: "Extra Homework Set 13"
+author:
+affiliation: "Dawson College Math 103"
+abstract:
+thanks:
+keywords:
+date:
+output:
+   html_document:
+    highlight: default
+    citation_package:
+    keep_tex: false
+    fig_caption: true
+    latex_engine: pdflatex
+fontsize: 11pt
+geometry: margin=1in
+bibliography:
+biblio-style:
+header-includes:
+- \usepackage{indentfirst}
+- \usepackage{graphicx}
+- \usepackage{geometry}
+- \usepackage{subfigure}
+- \usepackage{amsmath}
+- \usepackage{listings}
+- \usepackage{tikz}
+- \usetikzlibrary{matrix}
+---
+
+\vspace{0.25in}
+
+
+
+# 1.
+
+Compute the derivatives of the following functions.
+
+a. $f(x) = e^{2x}$
+
+b. $g(x) = \displaystyle e^{x^2}$
+
+c. $h(x) = \displaystyle x^2e^{x^2}$
+
+d. $f(x) = \displaystyle e^{e^{2x}}$
+
+e. $f(x) = \displaystyle e^{ 2x(x+3)}$
+
+f. $f(x) = \displaystyle \frac{e^x-1}{x}$
+
+# 2.
+
+Compute the derivatives of the following functions.
+
+a. $f(x) = \ln(2x)$
+
+b. $f(x) = x\ln(x)$
+
+c. $g(x) = x^2\ln(x^2)$
+
+d. $h(x) = \ln(x^2+3x+1)
+
+e. $f(x) = \displaystyle\frac{1}{\ln(x)}$
+
+f. $g(x) = \displaystyle \frac{1+(\ln(x))^2}{x}$
+
+# 3.
+
+Use logrithmic differentiation to find $y'$.
+
+a. $y = 2^x$
+
+b. $y = \displaystyle \frac{(x+2)e^x-2x}{x-1}$
+
+c. $e^y = (x-2)(x^2+1)$
+
+d. $\displaystyle\frac{y-2}{3-y}=\frac{2-x}{x^2+1}$

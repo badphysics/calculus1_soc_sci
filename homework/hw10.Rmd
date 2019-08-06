@@ -1,0 +1,94 @@
+---
+title: "Extra Homework Set 10"
+author:
+affiliation: "Dawson College Math 103"
+abstract:
+thanks:
+keywords:
+date:
+output:
+   html_document:
+    highlight: default
+    citation_package:
+    keep_tex: false
+    fig_caption: true
+    latex_engine: pdflatex
+fontsize: 11pt
+geometry: margin=1in
+bibliography:
+biblio-style:
+header-includes:
+- \usepackage{indentfirst}
+- \usepackage{graphicx}
+- \usepackage{geometry}
+- \usepackage{subfigure}
+- \usepackage{amsmath}
+- \usepackage{listings}
+- \usepackage{tikz}
+- \usetikzlibrary{matrix}
+---
+
+\vspace{0.25in}
+
+
+
+# 1.
+
+for each problem, find the $x$-coordinates of all critical points, find all discontinuities and intervals where the function is increasing and decreasing.
+
+a. $y=-x^3+2x^2+2$
+
+b. $y = x^3 - 11 x^2 + 39x -47$
+
+c. $y=-x^4+3x^2-3$
+
+d. $y = \displaystyle\frac{x^2}{4x+4}$
+
+e. $y = \displaystyle\frac{3x^2-3}{x^3}$
+
+f. $y = \displaystyle\left(2x-8\right)^\frac{2}{3}$
+
+**answers**:
+
+a. critical numbers: $x=0,\; \frac{4}{3}$. increasing:$(0,\frac{4}{3})$, decreasing: $(-\infty,0),\;\;(\frac{4}{3},\infty)$
+
+b. critical numbers: $x=3,\; \frac{13}{3}$. increasing:$(-\infty,3)$, $(\frac{13}{3},\infty)$, decreasing: $(3,\frac{13}{3})$
+
+c. critical numbers: $x=-\frac{\sqrt{6}}{2},\;0,\;\frac{\sqrt{6}}{2}$. increasing:$(-\infty,- \frac{\sqrt{6}}{2})$, $(0,\frac{\sqrt{6}}{2})$, decreasing: $(-\frac{\sqrt{6}}{2},0),\;(\frac{\sqrt{6}}{2},\infty)$
+
+d. critical numbers: $x=-2,\; 0$. discontinuity at: $x=-1$. increasing:$(-\infty,-2)$, $(0,\infty)$, decreasing: $(-2,-1),\;(-1,0)$
+
+e. critical numbers: $x=-\sqrt{3},\;\sqrt{3}$. discontinuity at: $x=0$. increasing:$(-\sqrt{3},0)$, $(0,\sqrt{3})$, decreasing: $(-\infty,-\sqrt{3}),\;(\sqrt{3},\infty)$
+
+f. critical numbers: $x=4$.  increasing:$(4,\infty)$, decreasing: $(-\infty,4)$
+
+# 2.
+
+For each problem, find all points of relative minima and maxima.
+
+a. $y=x^3-5x^2+7x-5$
+
+b. $y=x^3-6x^2+9x+1$
+
+c. $y=x^4-2x^2+3$
+
+d. $y = -\displaystyle\frac{2}{x^2-4}$
+
+e. $y = \displaystyle\left(2x-8 \right)^\frac{2}{3}$
+
+**answers:**
+
+a. rel min: $\displaystyle\left(\frac{7}{3},-\frac{86}{27} \right)$
+rel max: $(1,-2)$
+
+b. rel min: $\displaystyle\left(3,1 \right)$
+rel max: $(1,5)$
+
+c. rel min: $\displaystyle(-1,2 ),\;(1,2)$
+rel max: $(0,3)$
+
+d. rel min: $\displaystyle\left(0,\frac{1}{2} \right)$
+rel max: none
+
+e. rel min: $\displaystyle\left(4,0 \right)$
+rel max: none

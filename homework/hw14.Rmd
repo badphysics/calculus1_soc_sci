@@ -1,0 +1,76 @@
+---
+title: "Extra Homework Set 14"
+author:
+affiliation: "Dawson College Math 103"
+abstract:
+thanks:
+keywords:
+date:
+output:
+   html_document:
+    highlight: default
+    citation_package:
+    keep_tex: false
+    fig_caption: true
+    latex_engine: pdflatex
+fontsize: 11pt
+geometry: margin=1in
+bibliography:
+biblio-style:
+header-includes:
+- \usepackage{indentfirst}
+- \usepackage{graphicx}
+- \usepackage{geometry}
+- \usepackage{subfigure}
+- \usepackage{amsmath}
+- \usepackage{listings}
+- \usepackage{tikz}
+- \usetikzlibrary{matrix}
+---
+
+\vspace{0.25in}
+
+
+
+# 1.
+
+Compute the derivatives of the following functions.
+
+a. $f(x) = \sin(2x)$
+
+b. $g(x) = \sin(x^2)$
+
+c. $h(x) = x^2\cos(x^2)$
+
+d. $f(x) = 10\tan(x)+5\sec(x)$
+
+e. $g(t) = t^3-t^2\sin(t)$
+
+f. $h(t) = (\sin(x^2))^2$
+
+g. $g(x) = \displaystyle\frac{x+\tan(x)}{1+csc(x)}$
+
+h. $f(x) = \displaystyle\frac{\sin(x)}{x}$
+
+
+# 2.
+
+Find the tangent line to $f(x) = \tan(x) + 9\cos(x)$ at $x=\pi$.
+
+
+# 3.
+
+Where in the range $[-2,7]$ is the function $f(x) = 4\cos(x) -x$ increasing and decreasing.
+
+# 4.
+
+An observer watches a rocket launch from a distance of 2 km. the angle of elevation $\theta$ is increasing at $3^o$ per second at the instant when $\theta = 45^o$.  How fast is the rocket climbing at that instant.
+
+
+# 5.
+
+The beacon of a lighthouse 1 km from a straight shore revolves 5 times per minute and shines a spot of light on the shore.
+
+a. How fast is the spot of light moving when $\theta = 30^o$?
+
+b.  What happens to the velocity of the spot light as $\theta approaches $90^o$?

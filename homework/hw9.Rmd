@@ -1,0 +1,65 @@
+---
+title: "Extra Homework Set 9"
+author:
+affiliation: "Dawson College Math 103"
+abstract:
+thanks:
+keywords:
+date:
+output:
+   html_document:
+    highlight: default
+    citation_package:
+    keep_tex: false
+    fig_caption: true
+    latex_engine: pdflatex
+fontsize: 11pt
+geometry: margin=1in
+bibliography:
+biblio-style:
+header-includes:
+- \usepackage{indentfirst}
+- \usepackage{graphicx}
+- \usepackage{geometry}
+- \usepackage{subfigure}
+- \usepackage{amsmath}
+- \usepackage{listings}
+- \usepackage{tikz}
+- \usetikzlibrary{matrix}
+---
+
+\vspace{0.25in}
+
+
+
+# 1.
+
+A ladder 8 m long leans against a model home.  If the bottom of the ladder slides away from the building horizontally at a rate of 0.75 m/sec, how fast is the ladder sliding down the model home when the top of the ladder is 5 m from the ground?
+
+# 2.
+
+A car and a plane are racing each other. Both start at the same position, with the plane being 500 m above the car. The car has a maximum speed of 200 km/h and the plane has a maximum speed of 300 km/h. What is the rate of change of the distance between the plane and the car when both are at maximum speed and the plane is ahead by 70 m?
+
+# 3.
+
+A cylindrical fountain is filled with juice. The can has a 10 cm radius. How fast does the height of the juice in the can drop when the drink is being drained at 5 cm$^3$/sec?
+
+# 4.
+
+The radius of a particular circle increases at 1 millimeter each second. As a result, its area changes. Question: How fast is its area changing [at some particular instant]?
+
+# 5.
+
+The monthly revenue $R$ in dollars of a telephone polling service is related to the number $x$ of completed responses by the function
+$$
+R(x) = -13450+60\sqrt{6x^2+20x},
+$$
+where $0\leq x\leq 1500$.  If the number of complete responses is increasing at a rate of 10 forms per month, find the rate at which the monthly revenue is changing when $x=700$.
+
+# 6.
+
+Suppose the border of a town is roughly circular, and the radius of that circle has been increasing at a rate of 0.1 miles each year. Find how fast the area of the town has been increasing when the radius is 5 miles.
+
+# 7,
+
+A company has determined the demand curve for their product is $q=\sqrt{5000-p^2}$, where $p$ is the price in dollars, and $q$ is the quantity in millions. If weather conditions are driving the price up \$2 a week, find the rate at which demand is changing when the price is \$40.

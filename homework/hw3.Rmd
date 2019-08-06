@@ -1,0 +1,71 @@
+---
+title: "Extra Homework Set 3"
+author: 
+affiliation: "Dawson College Math 103"
+abstract:
+thanks:
+keywords:
+date:
+output:
+   html_document:
+    highlight: default
+    citation_package:
+    keep_tex: false
+    fig_caption: true
+    latex_engine: pdflatex
+fontsize: 11pt
+geometry: margin=1in
+bibliography:
+biblio-style:
+header-includes:
+- \usepackage{indentfirst}
+- \usepackage{graphicx}
+- \usepackage{geometry}
+- \usepackage{subfigure}
+- \usepackage{amsmath}
+- \usepackage{listings}
+- \usepackage{tikz}
+- \usetikzlibrary{matrix}
+---
+
+\vspace{0.25in}
+
+
+
+# 1. 
+
+Use the definition of the derivative to find the derivative of the following functions
+
+a. $f(x) = 2$
+
+b. $f(x) = x^2$
+
+c. $g(x) = 2x^2-x$
+
+d. $h(x) = \displaystyle \frac{2}{x}$
+
+e. $f(x) = \sqrt{x}$
+
+**answers**: a. 0, b. $2x$, c. $4x-1$, d. $\displaystyle\frac{-2}{x^2}$, e. $\displaystyle\frac{1}{2\sqrt{x}}$
+  
+# 2.
+
+Find the slope of the tangent line to the function $f(x) = 3x-x^2$ at the point $(1,2)$.
+
+**answer**: 1
+
+# 3.
+
+Find the derivative of the following functions
+
+a. $g(x) = A$, where $A$ is a constant
+
+b. $f(x) = \displaystyle \frac{5}{x}$
+
+c. $f(t) = \displaystyle 2t^3+\sqrt{t^3}$
+
+d. $h(x) = 4x^{44}-100x^2$
+
+e. $g(x) = (x^2-x)(\displaystyle\frac{1}{x}-2)$
+
+**answers**: a. 0, b. $-\displaystyle\frac{5}{x^2}$, c. $6t^2+\sqrt{t}$, d. $176x^{43}-200x$, 

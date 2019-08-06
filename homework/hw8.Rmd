@@ -1,0 +1,90 @@
+---
+title: "Extra Homework Set 8"
+author: 
+affiliation: "Dawson College Math 103"
+abstract:
+thanks:
+keywords:
+date:
+output:
+   html_document:
+    highlight: default
+    citation_package:
+    keep_tex: false
+    fig_caption: true
+    latex_engine: pdflatex
+fontsize: 11pt
+geometry: margin=1in
+bibliography:
+biblio-style:
+header-includes:
+- \usepackage{indentfirst}
+- \usepackage{graphicx}
+- \usepackage{geometry}
+- \usepackage{subfigure}
+- \usepackage{amsmath}
+- \usepackage{listings}
+- \usepackage{tikz}
+- \usetikzlibrary{matrix}
+---
+
+\vspace{0.25in}
+
+
+
+# 1. 
+
+Calculate $\displaystyle\frac{dy}{dx}$
+
+a. $y^2= 3x+x^2$
+
+a. $\displaystyle y^2x+xy=1$
+
+b. $(x^2+y)^3(x-y)=0$
+
+c. $x^2y^2-y=x$
+
+d. $\sqrt{xy}=x+3y$
+
+e. $\displaystyle\sqrt[3]{x^2}+\sqrt[3]{y^2}=1$
+
+f. $4y^2+2=3x^2$
+   
+**answers**:
+
+a. $\displaystyle\frac{dy}{dx}=\frac{3+2x}{y}$
+
+b. $\displaystyle\frac{dy}{dx}=\frac{-(y^2x+y)}{2yx+x}$
+
+c. $\displaystyle\frac{dy}{dx}=\frac{-5x^2+6xy-y^2}{3x-4y-x^2}$
+
+d. $\displaystyle\frac{dy}{dx}=\frac{1-2xy^2}{2x^2y-1}$
+
+e. $\displaystyle y' = \frac{2\sqrt{xy}-y}{x+6\sqrt{xy}}$
+
+f. $\displaystyle y' = \frac{\sqrt[3]{y}}{\sqrt[3]{x}}$
+
+g. $\displaystyle\frac{dy}{dx}=\frac{3x}{4y}$
+
+# 2.
+
+Find $\displaystyle\frac{d^2y}{dx^2}$ for the following equations
+
+a. $4y^2+2 = 3x^2$
+
+b. $5 = 4x^2+5y^2$
+
+c. $y^2+xy=3$
+
+d. $1-xy=x-y$
+
+**answers**:
+
+a. $y''=\displaystyle\frac{3(4y^2-3x^2)}{16y^3}$
+b. $y''=\displaystyle -\frac{3}{4}\left(\frac{1}{y}+\frac{4x}{5y^3}\right)$
+
+# 3.
+
+a. Determine the equation of the tangent line to the curve $y^2=3x^3+2x$ at the point $(2,6)$.
+
+b. Determine the equation of the tangent line to the curve $x^2 + 2xy-y^2+x=39$ at the point $(5,9)$.
